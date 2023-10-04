@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libewf-python
+Version: 20230212
+Summary: Python bindings module for libewf
+Home-page: https://github.com/libyal/libewf/
+Author: Joachim Metz
+Author-email: joachim.metz@gmail.com
+License: GNU Lesser General Public License v3 or later (LGPLv3+)
+Description-Content-Type: text/plain
+License-File: COPYING
+License-File: COPYING.LESSER
+License-File: AUTHORS
+
+Python bindings module for libewf

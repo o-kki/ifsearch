@@ -1,0 +1,15 @@
+1. project goals
+- It is one of the Digital Forensics Tools.
+- This project is designed to help you interpret RAW files such as E01, 001, etc.
+- It is designed to be user-friendly and utilizes existing and popular open source code.
+- Open Source Dependencies
+  - libewf - https://github.com/libyal/libewf
+  - pytsk3 - https://github.com/py4n6/pytsk
+
+2. Install and Execute code
+- Installation
+# git clone https://github.com/o-kki/ifsearch
+# pip install -r requirements
+
+- Exectue code(Example)
+# (venv) python3 mcat.py -f {image file path} -s {output path}
