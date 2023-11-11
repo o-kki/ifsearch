@@ -12,4 +12,4 @@
 # pip install -r requirements
 
 - Exectue code(Example)
-# (venv) python3 mcat.py -f {image file path} -s {output path}
+# (venv) python3 mcat.py -v(option, if you want to search files extension, you write it!)-f {image file path} -s {output path}
