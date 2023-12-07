@@ -5,7 +5,7 @@ import argparse
 import glob
 __author__ = 'ykj'
 __email__ = 'jyki3848@gmail.com'
-__version__ = '1.3'
+__version__ = '2.0'
 
 class EWFImgInfo(pytsk3.Img_Info):
     def __init__(self, ewf_handle):
@@ -229,13 +229,14 @@ def extract_collect_e01(e01_path, collect_m_list, collect_vm_list, output_path):
 
 
 if __name__ == "__main__":
-    collect_m_list = ["/pagefile.sys", "/swapfile.sys", "/hiberfil.sys", "/Windows/MEMORY.DMP"]  # 메모리 파일 수집 대상
+    collect_m_list = ["pagefile.sys", "swapfile.sys", "hiberfil.sys", "MEMORY.DMP"]  # 메모리 파일 수집 대상
     collect_vm_list = ['.vmem', '.vmss', '.vmsn']  # 가상 메모리 파일 수집 대상
+    parser = argparse.ArgumentParser(description='Unlive - Memory Files Collect from Image Files.',
+                                     usage="\n How to use this code : -f [이미지 경로] -sv [저장 경로]")
 
-    parser = argparse.ArgumentParser(description='Unlive - Memory Files Collect from Image Files.')
     parser.add_argument('-f', '--imagepath', metavar='', help='Image Path', type=str, required=True)
-    parser.add_argument('-s','--savepath', metavar='', help='Collect and Analysis Result Path', type=str, required=True)
-    parser.add_argument('-v', '--virtual', metavar='', help='If you want to find Virtaul Machine Memory files....', type=str)
+    parser.add_argument('-sv','--savepath', metavar='', help='Collect and Analysis Result Path', type=str, required=True)
+    parser.add_argument('-vir', '--virtual', metavar='', help='If you want to find Virtaul Machine Memory files....', type=str)
 
     args = parser.parse_args()
 
