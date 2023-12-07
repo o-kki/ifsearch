@@ -1,3 +1,5 @@
+ifsearch - Memory files
+
 1. project goals
 - It is one of the Digital Forensics Tools.
 - This project is designed to help you interpret RAW files such as E01, 001, etc.
@@ -12,4 +14,8 @@
 # pip install -r requirements
 
 - Exectue code(Example)
-# (venv) python3 mcat.py -f {image file path} -s {output path}
+# (venv) python3 mcat.py -v(option, if you want to search files extension, you write it!) -f {image file path} -s {output path}
+
+
+3. Update list
+- 2023.12.07
